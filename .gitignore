@@ -1,0 +1,10 @@
+# Pen proprietary application files and per-user backups
+app.asar
+app.asar.*.bak
+app.asar.*.tmp
+resources/
+
+# Node and editor output
+node_modules/
+*.log
+.DS_Store

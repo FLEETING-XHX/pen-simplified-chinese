@@ -1,0 +1,39 @@
+# 操作教程
+
+## 1. 确认版本
+
+打开 Pen，在 **Help → About Pen** 中确认版本为 `1.2.10`。版本不一致时请不要运行安装脚本。
+
+## 2. 保存并退出
+
+按 `Ctrl+S` 保存当前设计。关闭每一个 Pen 窗口，并在任务管理器确认没有 `Pen.exe`。
+
+## 3. 打开 PowerShell
+
+进入解压后的本项目文件夹，按住 `Shift` 后右键空白处，选择“在此处打开 PowerShell 窗口”。
+
+## 4. 执行安装
+
+复制并运行以下两行：
+
+```powershell
+Set-ExecutionPolicy -Scope Process Bypass
+.\Install-Chinese.ps1
+```
+
+`Set-ExecutionPolicy -Scope Process Bypass` 只对当前 PowerShell 窗口生效，关闭窗口后自动恢复，不修改系统全局设置。
+
+## 5. 启动 Pen
+
+出现“完成。现在可以启动 Pen。”后，正常启动 Pen 即可。顶部菜单、设置、导入导出与常用提示会显示为简体中文。
+
+## 6. 出现问题时恢复
+
+关闭 Pen，再运行：
+
+```powershell
+Set-ExecutionPolicy -Scope Process Bypass
+.\Restore-English.ps1
+```
+
+恢复完成后启动 Pen，界面会回到安装前的英文版。
