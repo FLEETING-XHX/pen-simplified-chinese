@@ -2,7 +2,7 @@
 
 为 Windows 版 [pen.dev](https://pen.dev/) 桌面应用提供简体中文固定界面文本。它直接更新 Pen 的 `app.asar` 资源包，不会在 Pen 运行时注入脚本。
 
-当前支持：**Pen 1.2.10（Windows x64）**。
+当前支持：**Pen 1.2.10、1.2.13（Windows x64）**。
 
 需要逐步操作说明，请查看：[操作教程](docs/使用教程.md)。
 
@@ -23,7 +23,7 @@
 
 ## 使用前准备
 
-1. 在 Pen 的 **Help → About Pen** 确认版本为 **1.2.10**。
+1. 在 Pen 的 **Help → About Pen** 确认版本为 **1.2.10 或 1.2.13**。
 2. 安装 Node.js 18 或更高版本。安装后，在 PowerShell 中运行 `node --version`，能显示版本号即可。
 3. 保存所有设计，然后**完全退出 Pen**。任务管理器中不应再有 `Pen.exe`。
 
@@ -81,7 +81,7 @@ Set-ExecutionPolicy -Scope Process Bypass
 
 Pen 更新通常会覆盖 `app.asar`。请先用 `Verify-Compatibility.ps1` 检查；若仍显示支持的版本，再关闭 Pen 并运行 `Install-Chinese.ps1`。
 
-当前脚本只允许对 1.2.10 写入。如果版本不同，脚本会停止，不会修改 Pen。
+当前脚本只允许对 1.2.10 和 1.2.13 写入。如果版本不同，脚本会停止，不会修改 Pen。
 
 ## 工作原理
 

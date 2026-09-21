@@ -1,4 +1,4 @@
-// Static UI translation for Pen 1.2.10.
+// Static UI translation for Pen 1.2.10 and 1.2.13.
 // It replaces literal UI labels in packed resources and never runs code inside
 // the editor window. Canvas content, saved .pen files, fonts, and UI events
 // are left untouched.
@@ -34,7 +34,7 @@ function readVersion(input) {
   return JSON.parse(packageData.toString('utf8')).version || 'unknown';
 }
 const version = readVersion(activeArchive);
-const supportedVersions = new Set(['1.2.10']);
+const supportedVersions = new Set(['1.2.10', '1.2.13']);
 if (!supportedVersions.has(version)) {
   throw new Error(`Pen ${version} is not supported by this release. No files were changed.`);
 }
@@ -61,7 +61,7 @@ const packageEntry = header.files?.['package.json'];
 const editorFiles = header.files?.out?.files?.editor?.files;
 const menuEntry = header.files?.out?.files?.['menu.js'];
 const editorEntry = editorFiles?.assets?.files?.['index.js'];
-if (!packageEntry || !menuEntry || !editorEntry) throw new Error('Expected Pen 1.2.10 resources were not found; no files were changed.');
+if (!packageEntry || !menuEntry || !editorEntry) throw new Error(`Expected Pen ${version} resources were not found; no files were changed.`);
 
 const oldData = archive.subarray(oldDataStart);
 const originalEditor = archive.subarray(oldDataStart + Number(editorEntry.offset), oldDataStart + Number(editorEntry.offset) + editorEntry.size).toString('utf8');
