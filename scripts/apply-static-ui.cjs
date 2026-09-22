@@ -66,6 +66,23 @@ if (!packageEntry || !menuEntry || !editorEntry) throw new Error(`Expected Pen $
 const oldData = archive.subarray(oldDataStart);
 const originalEditor = archive.subarray(oldDataStart + Number(editorEntry.offset), oldDataStart + Number(editorEntry.offset) + editorEntry.size).toString('utf8');
 
+const phraseCatalogPath = path.join(__dirname, '..', 'patches', 'static-phrases.json');
+function loadStaticPhraseCatalog() {
+  if (!fs.existsSync(phraseCatalogPath)) throw new Error(`Translation catalog was not found: ${phraseCatalogPath}`);
+  const catalog = JSON.parse(fs.readFileSync(phraseCatalogPath, 'utf8').replace(/^\uFEFF/, ''));
+  if (!Array.isArray(catalog.replacements)) throw new Error('Translation catalog has no replacements array.');
+  const seen = new Set();
+  const pairs = [];
+  for (const item of catalog.replacements) {
+    if (!item || typeof item.from !== 'string' || typeof item.to !== 'string' || !item.from || !item.to) continue;
+    if (seen.has(item.from)) continue;
+    seen.add(item.from);
+    pairs.push([item.from, item.to]);
+  }
+  return pairs.sort((a, b) => b[0].length - a[0].length);
+}
+const staticPhraseReplacements = loadStaticPhraseCatalog();
+
 const labels = new Map([
   // Canvas property panel
   ['Alignment', '对齐'], ['Position', '位置'], ['Layout', '布局'], ['Dimensions', '尺寸'],
@@ -321,6 +338,10 @@ const nativeMenuLabels = new Map([
 
 function translateLiterals(source) {
   for (const [english, chinese] of labels) source = source.replaceAll(JSON.stringify(english), JSON.stringify(chinese));
+  // Imported phrases are only substituted when they are complete JSON string
+  // literals in Pen's bundle. This avoids touching identifiers and executable
+  // code while extending coverage for dialogs and explanatory text.
+  for (const [english, chinese] of staticPhraseReplacements) source = source.replaceAll(JSON.stringify(english), JSON.stringify(chinese));
   // These labels are embedded in template literals because they include a
   // keyboard shortcut or a dynamic path, so JSON-string replacement cannot see them.
   source = source
@@ -395,16 +416,24 @@ const verifyEditorEntry = verifyHeader.files.out.files.editor.files.assets.files
 const verifyMenu = output.subarray(verifyDataStart + Number(verifyMenuEntry.offset), verifyDataStart + Number(verifyMenuEntry.offset) + verifyMenuEntry.size);
 const verifyEditor = output.subarray(verifyDataStart + Number(verifyEditorEntry.offset), verifyDataStart + Number(verifyEditorEntry.offset) + verifyEditorEntry.size);
 const requiredMenuLabels = ['文件', '编辑', '视图', '窗口', '帮助', '最近打开', '导出所选内容…', '导出快照…', '指南：如何将设计导出为代码…', '另存为…', '设置…'];
-if (!verifyEditor.toString('utf8').includes('"对齐"') ||
-    !verifyEditor.toString('utf8').includes('100:"细",200:"特细"') ||
-    !verifyEditor.toString('utf8').includes('o.includes("Light")') ||
-    !requiredMenuLabels.every((label) => verifyMenu.toString('utf8').includes(JSON.stringify(label))) ||
-    verifyEditorEntry.integrity.hash !== integrity(verifyEditor).hash ||
-    verifyMenuEntry.integrity.hash !== integrity(verifyMenu).hash) {
-  throw new Error('Output verification failed; no files were changed.');
+const requiredCatalogLabels = ['Anthropic 控制台', '基于所选画框生成 React/Tailwind/NextJS 代码', '最小化聊天'];
+const verifyEditorText = verifyEditor.toString('utf8');
+const verifyMenuText = verifyMenu.toString('utf8');
+const missingCatalogLabels = requiredCatalogLabels.filter((label) => !verifyEditorText.includes(JSON.stringify(label)) && !verifyMenuText.includes(JSON.stringify(label)));
+const verificationFailures = [
+  !verifyEditorText.includes('"对齐"') && 'core label: 对齐',
+  !verifyEditorText.includes('100:"细",200:"特细"') && 'font-weight labels',
+  !verifyEditorText.includes('o.includes("Light")') && 'font matching remains English',
+  !requiredMenuLabels.every((label) => verifyMenuText.includes(JSON.stringify(label))) && 'native menu labels',
+  missingCatalogLabels.length && `catalog sample labels: ${missingCatalogLabels.join('、')}`,
+  verifyEditorEntry.integrity.hash !== integrity(verifyEditor).hash && 'editor integrity',
+  verifyMenuEntry.integrity.hash !== integrity(verifyMenu).hash && 'menu integrity',
+].filter(Boolean);
+if (verificationFailures.length) {
+  throw new Error(`Output verification failed (${verificationFailures.join(', ')}); no files were changed.`);
 }
 if (checkOnly) {
-  console.log(`Verification passed for Pen ${version}. New archive size: ${output.length} bytes.`);
+  console.log(`Verification passed for Pen ${version}. New archive size: ${output.length} bytes. Static phrase catalog: ${staticPhraseReplacements.length} entries.`);
   process.exit(0);
 }
 

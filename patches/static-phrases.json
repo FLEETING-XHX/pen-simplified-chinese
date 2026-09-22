@@ -1,0 +1,1089 @@
+{
+  "schemaVersion": 1,
+  "description": "完整固定界面短语。仅替换打包 JavaScript 中完整的 JSON 字符串字面量。",
+  "source": {
+    "name": "pen.dev 中文汉化",
+    "extensionId": "luanzun.pendevzh",
+    "version": "1.0.1",
+    "license": "MIT",
+    "notice": "翻译词条基于上游 MIT 许可整理；详见 THIRD_PARTY_NOTICES.md。"
+  },
+  "replacements": [
+    {
+      "from": " — Edited",
+      "to": " — 已编辑"
+    },
+    {
+      "from": "1) Copy/Paste: Copy any layer or frame in Figma and paste it onto the canvas in Pencil. Btw: Images are not included.",
+      "to": "1) 复制/粘贴：在 Figma 中复制任意图层或画框，粘贴到 Pencil 画布上。注意：图片不会被包含。"
+    },
+    {
+      "from": "A new version has been downloaded and is ready to install.",
+      "to": "新版本已下载完成，随时可以安装。"
+    },
+    {
+      "from": "A snapshot is a self-contained ZIP of this design and all referenced dependencies so it can be reopened on another machine. It will include:",
+      "to": "快照是此设计及所有相关依赖的自包含 ZIP 文件，可在其他设备上重新打开。它将包含："
+    },
+    {
+      "from": "API key saved. Enter a new key to replace it.",
+      "to": "API 密钥已保存。输入新密钥以替换它。"
+    },
+    {
+      "from": "Absolute Position",
+      "to": "绝对定位"
+    },
+    {
+      "from": "Active MCPs:",
+      "to": "已启用的 MCP："
+    },
+    {
+      "from": "Add frames to the canvas to see them here as slides. Frames appear in document order and can be reordered by dragging.",
+      "to": "在画布上添加画框，它们会作为幻灯片显示在此处。画框按文档顺序排列，可拖动重新排序。"
+    },
+    {
+      "from": "Add renamed",
+      "to": "添加已重命名的"
+    },
+    {
+      "from": "All Fonts",
+      "to": "全部字体"
+    },
+    {
+      "from": "Allow agents to run without permission prompts. This gives full file system and command access.",
+      "to": "允许智能体在无权限提示的情况下运行。这将授予完整的文件系统和命令访问权限。"
+    },
+    {
+      "from": "Always Allow",
+      "to": "始终允许"
+    },
+    {
+      "from": "Anthropic Console",
+      "to": "Anthropic 控制台"
+    },
+    {
+      "from": "Ask Claude to generate code from your designs (Keep Pencil desktop app running). Claude Code will be able to access selections, components, variables, etc.",
+      "to": "让 Claude 根据您的设计生成代码（请保持 Pencil 桌面应用运行）。Claude Code 将能够访问所选内容、组件、变量等。"
+    },
+    {
+      "from": "Attach context files:",
+      "to": "附加上下文文件："
+    },
+    {
+      "from": "Authenticate with:",
+      "to": "使用以下方式认证："
+    },
+    {
+      "from": "Blend mode",
+      "to": "混合模式"
+    },
+    {
+      "from": "Check status",
+      "to": "查看状态"
+    },
+    {
+      "from": "Clear Agent History",
+      "to": "清除智能体历史"
+    },
+    {
+      "from": "Click and toggle off and on the Pencil MCP server in settings",
+      "to": "在设置中点击并开关 Pencil MCP 服务器"
+    },
+    {
+      "from": "Connect your AI provider",
+      "to": "连接您的 AI 提供商"
+    },
+    {
+      "from": "Convert to layers",
+      "to": "转换为图层"
+    },
+    {
+      "from": "Copy HTML",
+      "to": "复制 HTML"
+    },
+    {
+      "from": "Copy as Fill",
+      "to": "复制为填充"
+    },
+    {
+      "from": "Create a React component based on the selected frame",
+      "to": "基于所选画框创建 React 组件"
+    },
+    {
+      "from": "Current workspace",
+      "to": "当前工作区"
+    },
+    {
+      "from": "Dangerously skip permissions",
+      "to": "跳过权限（高风险）"
+    },
+    {
+      "from": "Design Goodies",
+      "to": "设计素材"
+    },
+    {
+      "from": "Design Systems",
+      "to": "设计系统"
+    },
+    {
+      "from": "Design with AI in pen.dev",
+      "to": "在 pen.dev 中用 AI 设计"
+    },
+    {
+      "from": "Design with Fable 5, GPT 5.6, Opus 4.8, Grok 4.5, Composer 2.5, Minimax M3, GLM 5.2, Kimi K2.7 Code, Qwen 3.7...",
+      "to": "使用 Fable 5、GPT 5.6、Opus 4.8、Grok 4.5、Composer 2.5、Minimax M3、GLM 5.2、Kimi K2.7 Code、Qwen 3.7 进行设计……"
+    },
+    {
+      "from": "Dismiss Sample Prompts",
+      "to": "关闭示例提示"
+    },
+    {
+      "from": "Display Name",
+      "to": "显示名称"
+    },
+    {
+      "from": "Download file",
+      "to": "下载文件"
+    },
+    {
+      "from": "Download the app to edit files",
+      "to": "下载应用以编辑文件"
+    },
+    {
+      "from": "Download the file and open it in the pen.dev app to edit it.",
+      "to": "下载文件并在 pen.dev 应用中打开以进行编辑。"
+    },
+    {
+      "from": "Drop .pen file to open",
+      "to": "拖入 .pen 文件以打开"
+    },
+    {
+      "from": "Email Address",
+      "to": "电子邮箱地址"
+    },
+    {
+      "from": "Example prompt (Run via Claude Code CLI in Terminal):",
+      "to": "示例提示（通过终端中的 Claude Code CLI 运行）："
+    },
+    {
+      "from": "Export HTML",
+      "to": "导出 HTML"
+    },
+    {
+      "from": "Export Settings",
+      "to": "导出设置"
+    },
+    {
+      "from": "Export snapshot",
+      "to": "导出快照"
+    },
+    {
+      "from": "Failed to start Pencil",
+      "to": "启动 Pencil 失败"
+    },
+    {
+      "from": "Free for macOS, Windows and Linux",
+      "to": "macOS、Windows 和 Linux 免费使用"
+    },
+    {
+      "from": "Generate Gemini API key",
+      "to": "生成 Gemini API 密钥"
+    },
+    {
+      "from": "Generate React/Tailwind/NextJS code from the selected frame",
+      "to": "基于所选画框生成 React/Tailwind/NextJS 代码"
+    },
+    {
+      "from": "Generate a Cursor API key",
+      "to": "生成 Cursor API 密钥"
+    },
+    {
+      "from": "Go from prompt to polished design in seconds.",
+      "to": "几秒钟内从提示词到精致设计。"
+    },
+    {
+      "from": "Hardware acceleration unavailable",
+      "to": "硬件加速不可用"
+    },
+    {
+      "from": "Hi, I am your design agent. Ask me to design something...",
+      "to": "你好，我是你的设计智能体。让我为你设计点什么……"
+    },
+    {
+      "from": "How to export to code:",
+      "to": "如何导出为代码："
+    },
+    {
+      "from": "I have a password",
+      "to": "我已设置密码"
+    },
+    {
+      "from": "Import Snapshot",
+      "to": "导入快照"
+    },
+    {
+      "from": "Include HTML scaffold",
+      "to": "包含 HTML 骨架"
+    },
+    {
+      "from": "Include layer IDs",
+      "to": "包含图层 ID"
+    },
+    {
+      "from": "Include layer names",
+      "to": "包含图层名称"
+    },
+    {
+      "from": "Install Claude Code",
+      "to": "安装 Claude Code"
+    },
+    {
+      "from": "Install OpenAI Codex",
+      "to": "安装 OpenAI Codex"
+    },
+    {
+      "from": "Install and Restart",
+      "to": "安装并重启"
+    },
+    {
+      "from": "Install on next launch",
+      "to": "下次启动时安装"
+    },
+    {
+      "from": "Iteration mode",
+      "to": "迭代模式"
+    },
+    {
+      "from": "Layers will be exported as pages in a single PDF. Pages are sorted in the order they were selected.",
+      "to": "图层将作为页面导出到单个 PDF 中。页面按所选顺序排列。"
+    },
+    {
+      "from": "Learn more",
+      "to": "了解更多"
+    },
+    {
+      "from": "Leave the agent running after a design is done. It will keep generating new variations on its own.",
+      "to": "设计完成后让智能体继续运行。它会持续自动生成新的变体。"
+    },
+    {
+      "from": "Loading agent conversations…",
+      "to": "正在加载智能体对话……"
+    },
+    {
+      "from": "Local font files will be automatically copied next to your pen file.",
+      "to": "本地字体文件将自动复制到您的 .pen 文件旁边。"
+    },
+    {
+      "from": "Locate the missing library?",
+      "to": "定位缺失的库？"
+    },
+    {
+      "from": "Minimize chat",
+      "to": "最小化聊天"
+    },
+    {
+      "from": "Missing dependencies",
+      "to": "缺少依赖"
+    },
+    {
+      "from": "Mixed themes",
+      "to": "混合主题"
+    },
+    {
+      "from": "Models/Provider info",
+      "to": "模型/提供商信息"
+    },
+    {
+      "from": "New Agent",
+      "to": "新建智能体"
+    },
+    {
+      "from": "No components found",
+      "to": "未找到组件"
+    },
+    {
+      "from": "No models found",
+      "to": "未找到模型"
+    },
+    {
+      "from": "No organizations",
+      "to": "没有组织"
+    },
+    {
+      "from": "No recent files yet",
+      "to": "暂无最近文件"
+    },
+    {
+      "from": "No, paste verbatim copies",
+      "to": "不，原样粘贴副本"
+    },
+    {
+      "from": "Not now",
+      "to": "暂不"
+    },
+    {
+      "from": "Note: Some advanced graphics features might not yet be supported. Multi-page .fig files are not supported yet (only first page is imported).",
+      "to": "注意：部分高级图形功能可能尚不支持。多页 .fig 文件暂不支持（仅导入第一页）。"
+    },
+    {
+      "from": "Notify when agents finish designing while the app is in the background.",
+      "to": "当智能体在后台完成设计时发出通知。"
+    },
+    {
+      "from": "OpenAI Dashboard",
+      "to": "OpenAI 控制台"
+    },
+    {
+      "from": "Opening your browser…",
+      "to": "正在打开浏览器……"
+    },
+    {
+      "from": "Paste a snapshot URL to download and open it in Pencil.",
+      "to": "粘贴快照 URL 以在 Pencil 中下载并打开。"
+    },
+    {
+      "from": "Pencil it out",
+      "to": "用 Pencil 设计"
+    },
+    {
+      "from": "Pencil not connected",
+      "to": "Pencil 未连接"
+    },
+    {
+      "from": "Permission Request",
+      "to": "权限请求"
+    },
+    {
+      "from": "Pick names for your design agents",
+      "to": "为您的设计智能体取名"
+    },
+    {
+      "from": "Planning next moves",
+      "to": "正在规划下一步"
+    },
+    {
+      "from": "Please restart the app and try again.",
+      "to": "请重启应用后重试。"
+    },
+    {
+      "from": "Privacy Policy",
+      "to": "隐私政策"
+    },
+    {
+      "from": "Re-check connection",
+      "to": "重新检查连接"
+    },
+    {
+      "from": "Read only",
+      "to": "只读"
+    },
+    {
+      "from": "Recent files",
+      "to": "最近文件"
+    },
+    {
+      "from": "Remind me later",
+      "to": "稍后提醒我"
+    },
+    {
+      "from": "Remove Agent History",
+      "to": "删除智能体历史"
+    },
+    {
+      "from": "Remove all",
+      "to": "删除全部"
+    },
+    {
+      "from": "Remove imported library?",
+      "to": "移除已导入的库？"
+    },
+    {
+      "from": "Resend code",
+      "to": "重新发送验证码"
+    },
+    {
+      "from": "Reset Curve",
+      "to": "重置曲线"
+    },
+    {
+      "from": "Reset Position",
+      "to": "重置位置"
+    },
+    {
+      "from": "Reset to main model",
+      "to": "重置为主模型"
+    },
+    {
+      "from": "Save File",
+      "to": "保存文件"
+    },
+    {
+      "from": "Script Gallery...",
+      "to": "脚本库……"
+    },
+    {
+      "from": "Select snapshot directory",
+      "to": "选择快照目录"
+    },
+    {
+      "from": "Selected tab will be used for agent names.",
+      "to": "所选标签页将用于智能体名称。"
+    },
+    {
+      "from": "Setup Providers",
+      "to": "设置提供商"
+    },
+    {
+      "from": "Setup your AI agent",
+      "to": "设置您的 AI 智能体"
+    },
+    {
+      "from": "Shader Gallery...",
+      "to": "着色器库……"
+    },
+    {
+      "from": "Show Agent History",
+      "to": "显示智能体历史"
+    },
+    {
+      "from": "Show usage",
+      "to": "显示用量"
+    },
+    {
+      "from": "Sign out",
+      "to": "退出登录"
+    },
+    {
+      "from": "Snapshot URL",
+      "to": "快照 URL"
+    },
+    {
+      "from": "Something went wrong while starting Pencil.",
+      "to": "启动 Pencil 时出现问题。"
+    },
+    {
+      "from": "Step 1",
+      "to": "步骤 1"
+    },
+    {
+      "from": "Step 2",
+      "to": "步骤 2"
+    },
+    {
+      "from": "Stop agents",
+      "to": "停止智能体"
+    },
+    {
+      "from": "Stop all agents",
+      "to": "停止所有智能体"
+    },
+    {
+      "from": "Stop current",
+      "to": "停止当前"
+    },
+    {
+      "from": "Subagent Task",
+      "to": "子智能体任务"
+    },
+    {
+      "from": "Submit Answer",
+      "to": "提交答案"
+    },
+    {
+      "from": "Terms of Use",
+      "to": "使用条款"
+    },
+    {
+      "from": "These variables already exist in this document with a different value. Choose which value to keep for each.",
+      "to": "这些变量已存在于本文档中，但值不同。请为每个变量选择要保留的值。"
+    },
+    {
+      "from": "This file is a library",
+      "to": "此文件是一个库"
+    },
+    {
+      "from": "This is a read-only preview. Download the pen.dev app and this file to make changes.",
+      "to": "这是一个只读预览。下载 pen.dev 应用和此文件以进行更改。"
+    },
+    {
+      "from": "This will permanently delete all agent chat history and cannot be undone.",
+      "to": "这将永久删除所有智能体聊天历史，且无法撤销。"
+    },
+    {
+      "from": "Tip: You can ask agent to generate a script for you based on your description or find more scripts in Goodies...",
+      "to": "提示：您可以让智能体根据您的描述生成脚本，或在“设计素材”中寻找更多脚本……"
+    },
+    {
+      "from": "Tip: You can ask agent to generate a shader for you based on your description or find more shaders in Goodies...",
+      "to": "提示：您可以让智能体根据您的描述生成着色器，或在“设计素材”中寻找更多着色器……"
+    },
+    {
+      "from": "Tip: skip future permission requests by setting the repository folder.",
+      "to": "提示：通过设置仓库文件夹可跳过将来的权限请求。"
+    },
+    {
+      "from": "To continue the conversation save the file first.",
+      "to": "要继续对话，请先保存文件。"
+    },
+    {
+      "from": "Try it free",
+      "to": "免费试用"
+    },
+    {
+      "from": "Turn into a library",
+      "to": "转换为库"
+    },
+    {
+      "from": "Update CSS based on the variables in the design",
+      "to": "根据设计中的变量更新 CSS"
+    },
+    {
+      "from": "Update Ready",
+      "to": "更新就绪"
+    },
+    {
+      "from": "Upgrade to keep designing and building",
+      "to": "升级以继续设计与构建"
+    },
+    {
+      "from": "Use email code instead",
+      "to": "改用邮箱验证码"
+    },
+    {
+      "from": "Use existing",
+      "to": "使用现有"
+    },
+    {
+      "from": "Use tokens from your existing subscriptions. Pen.dev automatically connects to Claude Code and Codex on your system.",
+      "to": "使用您现有订阅中的 tokens。Pen.dev 会自动连接您系统中的 Claude Code 和 Codex。"
+    },
+    {
+      "from": "Verification Code",
+      "to": "验证码"
+    },
+    {
+      "from": "View all plans",
+      "to": "查看所有方案"
+    },
+    {
+      "from": "View status",
+      "to": "查看状态"
+    },
+    {
+      "from": "Visit your billing settings to review available plans and upgrade.",
+      "to": "访问您的账单设置以查看可用方案并升级。"
+    },
+    {
+      "from": "Waiting for authorization…",
+      "to": "正在等待授权……"
+    },
+    {
+      "from": "We use cookies to understand how the web editor is used.",
+      "to": "我们使用 Cookie 来了解网页编辑器的使用情况。"
+    },
+    {
+      "from": "Would you like to import this library into the current document? This will preserve the pasted objects as instances of the library",
+      "to": "是否要将此库导入当前文档？这将把粘贴的对象保留为该库的实例"
+    },
+    {
+      "from": "You can also customize the names of your agents or do this later.",
+      "to": "您也可以自定义智能体的名称，或稍后再做。"
+    },
+    {
+      "from": "You can now add it to other files. Changes to components and variables in this file will update everywhere you use them.",
+      "to": "您现在可以将其添加到其他文件。对此文件中的组件和变量的更改将在所有使用处同步更新。"
+    },
+    {
+      "from": "Your Libraries",
+      "to": "您的库"
+    },
+    {
+      "from": "Zoom to 200%",
+      "to": "缩放至 200%"
+    },
+    {
+      "from": "Zoom to 50%",
+      "to": "缩放至 50%"
+    },
+    {
+      "from": "← Use a different email",
+      "to": "← 使用其他邮箱"
+    },
+    {
+      "from": "Agent panel controls",
+      "to": "智能体面板控制"
+    },
+    {
+      "from": "Agent sessions",
+      "to": "智能体会话"
+    },
+    {
+      "from": "Code export settings",
+      "to": "代码导出设置"
+    },
+    {
+      "from": "Dismiss status notice",
+      "to": "关闭状态通知"
+    },
+    {
+      "from": "Goodies sections",
+      "to": "设计素材分区"
+    },
+    {
+      "from": "New agent",
+      "to": "新建智能体"
+    },
+    {
+      "from": "Scroll to bottom",
+      "to": "滚动到底部"
+    },
+    {
+      "from": "Select asset export mode",
+      "to": "选择资源导出模式"
+    },
+    {
+      "from": "Select code export format",
+      "to": "选择代码导出格式"
+    },
+    {
+      "from": "Selected Primitive",
+      "to": "所选图元"
+    },
+    {
+      "from": "Settings sections",
+      "to": "设置分区"
+    },
+    {
+      "from": "Variables panel controls and drag handle",
+      "to": "变量面板控制与拖动手柄"
+    },
+    {
+      "from": "Snap to pixel grid",
+      "to": "捕捉像素网格"
+    },
+    {
+      "from": "All systems operational",
+      "to": "所有系统运行正常"
+    },
+    {
+      "from": "Agent stopped by user.",
+      "to": "代理已被用户停止。"
+    },
+    {
+      "from": "The browser tool failed.",
+      "to": "浏览器工具失败。"
+    },
+    {
+      "from": "Failed to save",
+      "to": "保存失败"
+    },
+    {
+      "from": "Failed to get editor state!",
+      "to": "获取编辑器状态失败！"
+    },
+    {
+      "from": "Failed to get guidelines",
+      "to": "获取指南失败"
+    },
+    {
+      "from": "Failed to import font file",
+      "to": "导入字体文件失败"
+    },
+    {
+      "from": "Font file path (.ttf, .otf, .woff, .woff2)",
+      "to": "字体文件路径（.ttf、.otf、.woff、.woff2）"
+    },
+    {
+      "from": "Failed to load files",
+      "to": "加载文件失败"
+    },
+    {
+      "from": "Failed to download files",
+      "to": "下载文件失败"
+    },
+    {
+      "from": "Failed to upload share assets",
+      "to": "上传分享资源失败"
+    },
+    {
+      "from": "Failed to create share link",
+      "to": "创建分享链接失败"
+    },
+    {
+      "from": "Failed to get share status",
+      "to": "获取分享状态失败"
+    },
+    {
+      "from": "Failed to render Mermaid chart",
+      "to": "渲染 Mermaid 图表失败"
+    },
+    {
+      "from": "Could not import this snapshot.",
+      "to": "无法导入此快照。"
+    },
+    {
+      "from": "Got app state",
+      "to": "已获取应用状态"
+    },
+    {
+      "from": "Got editor state",
+      "to": "已获取编辑器状态"
+    },
+    {
+      "from": "Getting editor state",
+      "to": "正在获取编辑器状态"
+    },
+    {
+      "from": "Checked guidelines",
+      "to": "已检查指南"
+    },
+    {
+      "from": "Checking guidelines",
+      "to": "正在检查指南"
+    },
+    {
+      "from": "Started agents",
+      "to": "已启动代理"
+    },
+    {
+      "from": "Starting agents",
+      "to": "正在启动代理"
+    },
+    {
+      "from": "Used the browser",
+      "to": "已使用浏览器"
+    },
+    {
+      "from": "Using the browser",
+      "to": "正在使用浏览器"
+    },
+    {
+      "from": "Setup tools",
+      "to": "设置工具"
+    },
+    {
+      "from": "Updated TODOs",
+      "to": "已更新待办"
+    },
+    {
+      "from": "The agent wants to use",
+      "to": "代理想要使用"
+    },
+    {
+      "from": "Generating code from .pen files",
+      "to": "正在根据 .pen 文件生成代码"
+    },
+    {
+      "from": "Composing screens with design system components",
+      "to": "使用设计系统组件组合屏幕"
+    },
+    {
+      "from": "Designing landing pages and promotional websites",
+      "to": "正在设计落地页和推广网站"
+    },
+    {
+      "from": "Designing mobile apps",
+      "to": "正在设计移动应用"
+    },
+    {
+      "from": "Designing presentation slides",
+      "to": "正在设计演示文稿"
+    },
+    {
+      "from": "Working with tables and dashboards",
+      "to": "正在处理表格和仪表盘"
+    },
+    {
+      "from": "Tailwind CSS v4 implementation",
+      "to": "Tailwind CSS v4 实现"
+    },
+    {
+      "from": "Designing web apps",
+      "to": "正在设计网页应用"
+    },
+    {
+      "from": "Designed",
+      "to": "已设计"
+    },
+    {
+      "from": "Import the full page",
+      "to": "导入整个页面"
+    },
+    {
+      "from": "Reproduce it as frames, text, and images.",
+      "to": "将其还原为画框、文字和图片。"
+    },
+    {
+      "from": "Import an element",
+      "to": "导入单个元素"
+    },
+    {
+      "from": "Pick one element instead of the whole page.",
+      "to": "只选取一个元素，而非整个页面。"
+    },
+    {
+      "from": "Import a screenshot",
+      "to": "导入截图"
+    },
+    {
+      "from": "Drop a PNG onto the canvas or send it to the agent.",
+      "to": "将 PNG 拖到画布上或发送给代理。"
+    },
+    {
+      "from": "What to act on (default full-page).",
+      "to": "要处理的内容（默认为整页）。"
+    },
+    {
+      "from": "Modify pencil documents",
+      "to": "修改 Pencil 文档"
+    },
+    {
+      "from": "Include the .pen file schema",
+      "to": "包含 .pen 文件结构"
+    },
+    {
+      "from": "The replacement text.",
+      "to": "替换文本。"
+    },
+    {
+      "from": "Guideline category",
+      "to": "指南类别"
+    },
+    {
+      "from": "Guideline name from the category listing",
+      "to": "类别列表中的指南名称"
+    },
+    {
+      "from": "Key-value pairs for required params returned in step 2",
+      "to": "第 2 步返回的必需参数键值对"
+    },
+    {
+      "from": "The prompt for the designer agent to run.",
+      "to": "要运行的设计代理提示词。"
+    },
+    {
+      "from": "Screenshot failed.",
+      "to": "截图失败。"
+    },
+    {
+      "from": "Failed to save profile. Please try again.",
+      "to": "保存档案失败，请重试。"
+    },
+    {
+      "from": "Invalid export path",
+      "to": "无效的导出路径"
+    },
+    {
+      "from": "Duplicate export paths",
+      "to": "导出路径重复"
+    },
+    {
+      "from": "The selected library is already imported!",
+      "to": "所选库已导入！"
+    },
+    {
+      "from": "The selected file is not a Pencil library!",
+      "to": "所选文件不是 Pencil 库！"
+    },
+    {
+      "from": "The selected file wasn't a Pencil library",
+      "to": "所选文件不是 Pencil 库"
+    },
+    {
+      "from": "No script file selected",
+      "to": "未选择脚本文件"
+    },
+    {
+      "from": "Invalid browser import data.",
+      "to": "无效的浏览器导入数据。"
+    },
+    {
+      "from": "Relative paths (in the repo...)",
+      "to": "相对路径（在仓库中...）"
+    },
+    {
+      "from": "Absolute paths (on the disk)",
+      "to": "绝对路径（磁盘上）"
+    },
+    {
+      "from": "Embed assets (self-contained document)",
+      "to": "嵌入资源（自包含文档）"
+    },
+    {
+      "from": "Optional: In addition to the AI design agents on the canvas, you can also connect to ",
+      "to": "可选：除画布上内置的 AI 设计代理外，你也可以从其他工具接入 "
+    },
+    {
+      "from": " via MCP from other tools, like Claude Code CLI. This has some advantages and it's great when exporting to code. But for designing on the canvas, the built-in agents are more convenient + you get parallel design agents and loops.",
+      "to": " 的 MCP，例如 Claude Code CLI。这样在导出代码时更有优势；要直接在画布上设计时，内置代理更方便，还支持并行设计代理与循环。"
+    },
+    {
+      "from": " via MCP externally",
+      "to": " 进行外部 MCP 连接"
+    },
+    {
+      "from": " in tools that we don't support out of the box, you can manually configure them via following config and paste it into MCP servers section, usually JSON.",
+      "to": " 时若未获得开箱即用支持，可按以下配置手动接入，并把配置粘贴到 MCP 服务器设置区域（通常为 JSON）。"
+    },
+    {
+      "from": " startup, MCP is automatically setup to selected CLI tools.",
+      "to": " 启动时，MCP 会自动为所选 CLI 工具完成配置。"
+    },
+    {
+      "from": "Copy MCP config",
+      "to": "复制 MCP 配置"
+    },
+    {
+      "from": "Fill Width",
+      "to": "填满宽度"
+    },
+    {
+      "from": "Fill Height",
+      "to": "填满高度"
+    },
+    {
+      "from": "Clip Content",
+      "to": "裁剪内容"
+    },
+    {
+      "from": "Hug Width",
+      "to": "自适应宽度"
+    },
+    {
+      "from": "Hug Height",
+      "to": "自适应高度"
+    },
+    {
+      "from": "Drop Shadow",
+      "to": "投影"
+    },
+    {
+      "from": "Background Blur",
+      "to": "背景模糊"
+    },
+    {
+      "from": "No components created yet.",
+      "to": "还没有创建任何组件。"
+    },
+    {
+      "from": "Tip: Why Use Components",
+      "to": "提示：为什么要使用组件"
+    },
+    {
+      "from": "Components let you maintain consistency across your designs. Edit the main component once and every instance updates automatically.",
+      "to": "组件可以让你的设计保持一致：只需编辑一次主组件，所有实例都会自动更新。"
+    },
+    {
+      "from": "Components serve as the foundation for building design systems.",
+      "to": "组件是构建设计系统的基石。"
+    },
+    {
+      "from": "Create component",
+      "to": "创建组件"
+    },
+    {
+      "from": "Detach instance",
+      "to": "分离实例"
+    },
+    {
+      "from": "Replace inside instance",
+      "to": "替换实例内部"
+    },
+    {
+      "from": "Detach Component",
+      "to": "分离组件"
+    },
+    {
+      "from": "Detach Instance",
+      "to": "分离实例"
+    },
+    {
+      "from": "Show pixel grid",
+      "to": "显示像素网格"
+    },
+    {
+      "from": "Snap to objects",
+      "to": "吸附到对象"
+    },
+    {
+      "from": "Use scroll wheel to zoom",
+      "to": "使用滚轮缩放"
+    },
+    {
+      "from": "Invert zoom direction",
+      "to": "反转缩放方向"
+    },
+    {
+      "from": "Hide sidebar when Layers are open",
+      "to": "图层打开时自动隐藏侧边栏"
+    },
+    {
+      "from": "Animations & effects (turn off to save GPU/CPU)",
+      "to": "动画与效果（关闭可节省 GPU/CPU）"
+    },
+    {
+      "from": "Agent Chat Text Size",
+      "to": "Agent 聊天文字大小"
+    },
+    {
+      "from": "Agent cursor size",
+      "to": "Agent 光标大小"
+    },
+    {
+      "from": "Agent cursor label",
+      "to": "Agent 光标标签"
+    },
+    {
+      "from": "Small (Default)",
+      "to": "小（默认）"
+    },
+    {
+      "from": "Agent (Default)",
+      "to": "Agent（默认）"
+    },
+    {
+      "from": "Agent + Model",
+      "to": "Agent + 模型"
+    },
+    {
+      "from": "Include HTML metadata when importing pages",
+      "to": "导入页面时包含 HTML 元数据"
+    },
+    {
+      "from": "Appearance",
+      "to": "外观"
+    },
+    {
+      "from": "Select an element to create a component.",
+      "to": "选择要创建为组件的元素。"
+    },
+    {
+      "from": "Creating Components",
+      "to": "创建组件"
+    },
+    {
+      "from": "Any standard design element — a frame, shape, or text — can be converted into a reusable component.",
+      "to": "任何标准设计元素——画框、形状或文本——都可以转换为可复用的组件。"
+    },
+    {
+      "from": "Select the element",
+      "to": "选择元素"
+    },
+    {
+      "from": "The element becomes your component origin, marked with a magenta bounding box. You can also create nested components for more complex structures.",
+      "to": "元素将成为组件的原点，并以洋红色边框标记。您还可以创建嵌套组件来构建更复杂的结构。"
+    },
+    {
+      "from": "Using Components",
+      "to": "使用组件"
+    },
+    {
+      "from": "Copy the component origin on the canvas to create an instance. Instances are marked with a violet bounding box when selected.",
+      "to": "复制画布上的组件原点即可创建实例。实例在选中时会以紫色边框标记。"
+    },
+    {
+      "from": "or click \"Create Component\" above",
+      "to": "，或点击上方的“创建组件”"
+    }
+  ]
+}

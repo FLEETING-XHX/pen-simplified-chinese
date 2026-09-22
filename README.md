@@ -13,6 +13,7 @@
 - 顶部 File、Edit、View、Window、Help 菜单及绝大多数二级菜单。
 - Dashboard、设置、工作区、导入导出、浏览器导入、组件库、设计库、字体、图层属性、评论、幻灯片和更新提示。
 - 智能体、账号、服务商、连接和同步等固定说明文本。
+- `patches/static-phrases.json` 中的 269 条完整固定短语，包括硬件加速、智能体权限、快照、代码导出与工作区说明。
 
 以下内容会保持原样，避免影响功能或误改用户内容：
 
@@ -85,7 +86,9 @@ Pen 更新通常会覆盖 `app.asar`。请先用 `Verify-Compatibility.ps1` 检�
 
 ## 工作原理
 
-`scripts/apply-static-ui.cjs` 从原版备份读取 `menu.js` 和编辑器的 `index.js`，只替换经过人工筛选的固定界面字符串，再更新 ASAR 文件索引和 SHA-256 完整性数据。Pen 启动时加载的是已处理的资源包，因此没有常驻程序，也不会在每次启动时自动执行汉化。
+`scripts/apply-static-ui.cjs` 从原版备份读取 `menu.js` 和编辑器的 `index.js`，只替换经过人工筛选的固定界面字符串，再更新 ASAR 文件索引和 SHA-256 完整性数据。完整短语词条独立存放在 `patches/static-phrases.json`，便于随 Pen 版本增量维护。Pen 启动时加载的是已处理的资源包，因此没有常驻程序，也不会在每次启动时自动执行汉化。
+
+VS Code 的 `luanzun.pendevzh` 扩展启发了本项目的词条表、幂等重建和更新后复检思路；其动态 DOM 注入不适用于桌面版，因此没有采用。第三方词条来源和 MIT 许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 仓库不包含 Pen 安装包、`app.asar`、原版备份或任何用户数据。
 
