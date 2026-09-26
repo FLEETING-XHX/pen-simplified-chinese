@@ -1,4 +1,4 @@
-// Static UI translation for Pen 1.2.10 and 1.2.13.
+// Static UI translation for Pen 1.2.10, 1.2.13 and 1.2.14.
 // It replaces literal UI labels in packed resources and never runs code inside
 // the editor window. Canvas content, saved .pen files, fonts, and UI events
 // are left untouched.
@@ -34,7 +34,7 @@ function readVersion(input) {
   return JSON.parse(packageData.toString('utf8')).version || 'unknown';
 }
 const version = readVersion(activeArchive);
-const supportedVersions = new Set(['1.2.10', '1.2.13']);
+const supportedVersions = new Set(['1.2.10', '1.2.13', '1.2.14']);
 if (!supportedVersions.has(version)) {
   throw new Error(`Pen ${version} is not supported by this release. No files were changed.`);
 }
@@ -91,10 +91,10 @@ const labels = new Map([
   ['Opacity', '不透明度'], ['Rotation', '旋转'], ['Corner Radius', '圆角'], ['Radius', '圆角'],
   ['Position', '位置'], ['Weight', '粗细'], ['Join', '连接'], ['Cap', '端点'], ['Center', '居中'],
   ['Inside', '内部'], ['Outside', '外部'], ['Solid', '实线'], ['Dashed', '虚线'],
-  ['Color', '颜色'], ['Width', '宽度'], ['Height', '高度'], ['X', 'X'], ['Y', 'Y'], ['W', '宽'], ['H', '高'], ['R', '旋转'],
+  ['Color', '颜色'], ['Width', '宽度'], ['Height', '高度'],
   ['Auto', '自动'], ['Fixed', '固定'], ['Hug contents', '适应内容'], ['Fill container', '填满容器'],
   ['Horizontal', '水平'], ['Vertical', '垂直'], ['Gap', '间距'], ['Padding', '内边距'],
-  ['Top', '顶部'], ['Right', '右侧'], ['Bottom', '底部'], ['Left', '左侧'],
+  ['Top', '顶部'], ['Bottom', '底部'],
   ['Layer', '图层'], ['Layers', '图层'], ['Assets', '资源'], ['Components', '组件'], ['Libraries', '库'],
   ['Text', '文本'], ['Image', '图片'], ['Icon', '图标'], ['Group', '组合'], ['Frame', '画板'],
   ['Page', '页面'], ['Pages', '页面'], ['Selection', '选择'], ['Export', '导出'],
@@ -310,6 +310,80 @@ const labels = new Map([
   ['pen.dev Website', 'pen.dev 网站'], ['Cursor Extension', 'Cursor 扩展'], ['VSCode Extension', 'VSCode 扩展'],
   ['Join Our Discord', '加入 Discord'], ['Restart & Install Update', '重启并安装更新'],
   ['Restart && Install Update', '重启并安装更新'], ['Install and Restart', '安装并重启'],
+  // Pen 1.2.14 additions: onboarding, provider setup, pen tool, browser import,
+  // keyboard-shortcut categories, and status labels. Shortcut-key hints (tool
+  // shortcut letters such as the R badge for the rectangle tool, Ctrl/Shift
+  // words) stay in English on purpose; blend modes, fonts, model names, and
+  // provider names stay in English by omission.
+  ['On', '开'], ['Off', '关'], ['Note', '便签'], ['Sticky note', '便签'], ['Pen tool', '钢笔工具'],
+  ['Point', '锚点'], ['Handles', '控制柄'], ['Slot', '插槽'], ['Grid', '网格'], ['Outline', '轮廓'],
+  ['Offset', '偏移'], ['Border', '边框'], ['Clear', '清除'], ['Reload', '重新加载'],
+  ['Force Reload', '强制重新加载'], ['Import', '导入'], ['Design', '设计'], ['Canvas', '画布'],
+  ['Browser', '浏览器'], ['Arrange', '排列'], ['Tools', '工具'], ['Path', '路径'], ['Pan', '平移'],
+  ['Hand', '抓手'], ['Move', '移动'], ['Select', '选择'], ['Link', '链接'], ['Source', '来源'],
+  ['Tag', '标签'], ['Align', '对齐'], ['Mouse', '鼠标'], ['Shapes', '形状'], ['Clipboard', '剪贴板'],
+  ['Colors', '颜色'], ['Fonts', '字体'], ['Images', '图片'], ['Variables', '变量'],
+  ['Shaders', '着色器'], ['Scripts', '脚本'], ['Goodies', '素材库'], ['Recents', '最近使用'],
+  ['Gradient', '渐变'], ['Linear', '线性'], ['Radial', '径向'], ['Angular', '角向'], ['Mesh', '网格'],
+  ['Stretch', '拉伸'], ['Justify', '两端对齐'], ['Next', '下一步'], ['Setup', '配置'],
+  ['Dismiss', '关闭'], ['Thinking', '思考中'], ['Thought', '已思考'], ['Automatic', '自动'],
+  ['Small', '小'], ['Large', '大'], ['Copied!', '已复制！'], ['Signed in', '已登录'],
+  ['Key saved', '密钥已保存'], ['Offline', '离线'], ['Not connected', '未连接'],
+  ['Checking…', '检查中…'], ['Upload failed', '上传失败'],
+  ['Unknown error', '未知错误'], ['Not checked', '未检查'], ['Your name', '你的名称'],
+  ['Edit Profile', '编辑资料'], ['Sign Out', '退出登录'], ['Device code', '设备码'],
+  ['Continue Later', '稍后继续'], ['Add model', '添加模型'], ['Or bring another model', '或添加其他模型'],
+  ['Connect your account', '连接你的账户'], ['Cursor API key', 'Cursor API 密钥'],
+  ['Gemini API key', 'Gemini API 密钥'], ['Cursor settings...', 'Cursor 设置…'],
+  ['External configuration', '外部配置'], ['MCP configuration', 'MCP 配置'],
+  ['Show MCP config', '显示 MCP 配置'], ['Output token parameter', '输出 Token 参数'],
+  ['Thinking format', '思考格式'], ['Max tokens', '最大 Token 数'],
+  ['Welcome to pen.dev', '欢迎使用 Pen'], ['Set up pen.dev', '设置 Pen'],
+  ['Feel right at home', '轻松上手'], ['Familiar shortcuts', '熟悉的快捷键'],
+  ['Create every detail', '刻画每个细节'], ['Build with structure', '用结构构建'],
+  ['Share your work', '分享你的作品'], ['Smooth performance', '流畅性能'],
+  ['Export at any size', '任意尺寸导出'], ['Export HTML instantly', '即时导出 HTML'],
+  ['Work in your repository', '在你的仓库中工作'], ['Measurements', '测量'],
+  ['Layers panel', '图层面板'], ['Component slots', '组件插槽'], ['UI libraries', 'UI 库'],
+  ['Slides & presentations', '幻灯片与演示'], ['Import & Generation', '导入与生成'],
+  ['Interface', '界面'], ['Navigation', '导航'], ['Snapping', '吸附'], ['Resizing', '调整大小'],
+  ['Show panel', '显示面板'], ['Hide panel', '隐藏面板'], ['Padding settings', '内边距设置'],
+  ['Zoom level', '缩放级别'], ['Move Tools', '移动工具'], ['Small nudge', '小幅轻移'],
+  ['Big nudge', '大幅轻移'], ['Custom nudge amount', '自定义轻移距离'],
+  ['Empty canvas.', '画布为空'], ['Demo File', '示例文件'], ['No files', '没有文件'],
+  ['Let it cook', '开始生成'], ['Ask me to design anything', '告诉我想设计什么'],
+  ['Hide agent input?', '隐藏智能体输入框？'], ['Add to Context', '添加到上下文'],
+  ['Add a point', '添加锚点'], ['Add fill', '添加填充'], ['Add stroke', '添加描边'],
+  ['Add effect', '添加效果'], ['Remove effect', '移除效果'], ['Add theme', '添加主题'],
+  ['Remove theme', '移除主题'], ['Add color stop', '添加色标'], ['Remove color stop', '移除色标'],
+  ['Box select', '框选'], ['Deep box select', '深度框选'], ['Add to box selection', '添加到框选'],
+  ['Duplicate selection', '复制所选内容'], ['Rotate 90° right', '顺时针旋转 90°'],
+  ['Align Top', '顶部对齐'], ['Align Left', '左对齐'], ['Align Right', '右对齐'],
+  ['Align Bottom', '底部对齐'], ['Align Center', '水平居中'], ['Align Middle', '垂直居中'],
+  ['Select points', '选择锚点'], ['Select all points', '全选锚点'],
+  ['Connect selected points', '连接所选锚点'], ['Select all connected points', '选择所有相连锚点'],
+  ['Edit points of a selected shape', '编辑所选形状的锚点'], ['Insert point on segment', '在线段上插入锚点'],
+  ['Move a point without drawing', '移动锚点而不绘制'], ['Toggle smooth and corner', '切换平滑与尖角'],
+  ['Bend into a curve', '弯曲成曲线'], ['Bend without moving neighbors', '弯曲而不移动相邻锚点'],
+  ['Break handle symmetry', '断开控制柄对称'], ['Pull symmetric handles', '对称拉动控制柄'],
+  ['Straighten segment', '拉直线段'], ['Drag off a duplicate', '拖出副本'],
+  ['Edit corners individually', '单独编辑各圆角'], ['Edit sides individually', '单独编辑各边'],
+  ['Show in folder', '在文件夹中显示'], ['Remove background', '移除背景'],
+  ['Vectorize image', '图片矢量化'], ['Capture element', '捕获元素'], ['Close this page', '关闭此页面'],
+  ['Open in browser', '在浏览器中打开'], ['Open in System Browser', '在系统浏览器中打开'],
+  ['Import HTML via browser', '通过浏览器导入 HTML'], ['Import from browser', '从浏览器导入'],
+  ['Import image file', '导入图片文件'], ['Import script file', '导入脚本文件'],
+  ['Import shader file', '导入着色器文件'], ['HTML Files', 'HTML 文件'],
+  ['Open design format (.pen)', '打开设计文件（.pen）'], ['(multi-select)', '（多选）'],
+  ['Zoom in', '放大'], ['Zoom out', '缩小'], ['Zoom to 100%', '缩放至 100%'],
+  ['Copy Code', '复制代码'], ['Copy link', '复制链接'], ['Copy table', '复制表格'], ['Copy as', '复制为'],
+  ['Click to copy', '点击复制'], ['Refresh comments', '刷新评论'], ['Send reply', '发送回复'],
+  ['Finish editing', '完成编辑'], ['Reply…', '回复…'], ['Write something …', '写点什么…'],
+  ['Hide IDE sidebar when Layers are open', '打开图层时隐藏 IDE 侧栏'],
+  ['Checking connection…', '正在检查连接…'], ['Sign-in failed. Please try again.', '登录失败，请重试。'],
+  ['A key is already saved — enter a new one to replace it.', '已保存密钥——输入新密钥即可替换。'],
+  ['Fit', '适应'], [' Connected', ' 已连接'], ['Read skill', '读取技能'],
+  ['Skill docs', '技能文档'], ['Add SKILL.md file…', '添加 SKILL.md 文件…'],
   // Keep MCP, Hook, Token, API and product names in English by omitting them.
 ]);
 
@@ -337,16 +411,32 @@ const nativeMenuLabels = new Map([
 ]);
 
 function translateLiterals(source) {
+  // Keyboard-key literals take part in runtime comparisons and key-name maps,
+  // so shield them from label replacement and restore them afterwards. This
+  // keeps Delete-key and arrow-key handling identical to the original bundle.
+  const guards = [
+    ['key==="Delete"', '\u0000ZCPEN-GUARD-0\u0000'],
+    ['Del:"Delete"', '\u0000ZCPEN-GUARD-1\u0000'],
+    ['46:"Delete"', '\u0000ZCPEN-GUARD-2\u0000'],
+  ];
+  for (const [needle, sentinel] of guards) source = source.replaceAll(needle, sentinel);
   for (const [english, chinese] of labels) source = source.replaceAll(JSON.stringify(english), JSON.stringify(chinese));
   // Imported phrases are only substituted when they are complete JSON string
   // literals in Pen's bundle. This avoids touching identifiers and executable
   // code while extending coverage for dialogs and explanatory text.
   for (const [english, chinese] of staticPhraseReplacements) source = source.replaceAll(JSON.stringify(english), JSON.stringify(chinese));
   // These labels are embedded in template literals because they include a
-  // keyboard shortcut or a dynamic path, so JSON-string replacement cannot see them.
+  // keyboard shortcut or a dynamic path, so JSON-string replacement cannot see
+  // them. The minified identifier inside ${...} is renamed between Pen builds,
+  // so these use a capture group instead of a literal name.
   source = source
     .replaceAll("`${Tt.cmdKey}+${Tt.shiftKey}+S to 'Save As' to a new location`", "`${Tt.cmdKey}+${Tt.shiftKey}+S 另存为到新位置`")
-    .replaceAll('`Workspace: ${q}`', '`工作区：${q}`')
+    .replace(/`Workspace: \$\{(\w+)\}`/g, '`工作区：${$1}`')
+    .replace(/`Thought for \$\{([^}]+)\}`/g, '`思考了 ${$1}`')
+    // Property-panel letter badges for width and height. Shortcut-key hints
+    // (for example the R key shown for the rectangle tool) are not translated.
+    .replaceAll('letter:"W"', 'letter:"宽"')
+    .replaceAll('letter:"H"', 'letter:"高"')
     // Keep font-import matching in English. Only the display-only lookup table
     // that feeds the font-weight dropdown is localized.
     .replaceAll(
@@ -359,6 +449,7 @@ function translateLiterals(source) {
     .replaceAll('children:"Medium"', 'children:"中"')
     .replaceAll('children:y.italic?"Italic":"Normal"', 'children:y.italic?"斜体":"常规"')
     .replaceAll('children:x?"Variable"', 'children:x?"变量"');
+  for (const [needle, sentinel] of guards) source = source.replaceAll(sentinel, needle);
   return source;
 }
 
