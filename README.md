@@ -2,7 +2,7 @@
 
 为 Windows 版 [pen.dev](https://pen.dev/) 桌面应用提供简体中文固定界面文本。它直接更新 Pen 的 `app.asar` 资源包，不会在 Pen 运行时注入脚本。
 
-当前支持：**Pen 1.2.10、1.2.13、1.2.14（Windows x64）**。
+当前支持：**Pen 1.2.10、1.2.13、1.2.14（Windows x64）**。 [下载最新版汉化包](https://github.com/FLEETING-XHX/pen-simplified-chinese/releases/latest/download/Pen-Simplified-Chinese-1.2.0.zip)
 
 需要逐步操作说明，请查看：[操作教程](docs/使用教程.md)。
 
